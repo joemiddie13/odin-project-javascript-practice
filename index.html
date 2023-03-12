@@ -21,7 +21,54 @@
         //let result = 5 > 4;
         //alert(result);
 
+        // STRING COMPARISON
+
+        //alert("z" > "a");
+        //alert("Rocko" > "Mango");
+
+        //STRICT EQUALITY
+        //A regular equality check == cannot differentiate 0 from false
         
+        //A strict equality operator === checks the equality without type conversion
+
+        //alert(0 === false); //false, because the types are different
+        
+        //Comparison operators return a boolean value
+        //Strings are compared letter-by-letter into the "dictionary" order
+        //When values of different types are compared, they get converted to numbers
+
+        // console.log(5 > 4); //true
+        // console.log("apple" > "pineapple"); //false
+        // console.log("2" > "12"); //true
+        // console.log(undefined == null); //true
+        // console.log(undefined === null); //false
+        // console.log(null == "\n0\n"); //false
+        // console.log(null === +"\n0\n"); // false
+
+        // Obviously, true.
+        // Dictionary comparison, hence false. "a" is smaller than "p".
+        // Again, dictionary comparison, first char "2" is greater than the first char "1".
+        // Values null and undefined equal each other only.
+        // Strict equality is strict. Different types from both sides lead to false.
+        // Similar to (4), null only equals undefined.
+        // Strict equality of different types.
+
+        // let hour = 19;
+        // if (hour < 10) {
+        //     greeting = "Good morning!";
+        // } else if (hour < 20) {
+        //     greeting = "Good day!";
+        // } else {
+        //     greeting = "Good evening!";
+        //         }
+        // console.log(greeting);
+
+        let hour = 11;
+        let isWeekend = true;
+
+        if (hour < 10 || hour > 18 || isWeekend) {
+            alert("The office is closed." );
+        }
 
     </script>
 
