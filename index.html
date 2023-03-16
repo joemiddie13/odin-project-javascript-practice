@@ -63,12 +63,50 @@
         //         }
         // console.log(greeting);
 
-        let hour = 11;
-        let isWeekend = true;
+        // let hour = 11;
+        // let isWeekend = true;
 
-        if (hour < 11 || hour > 15 || isWeekend) {
-            alert("The office is closed." );
+        // if (hour < 11 || hour > 15 || isWeekend) {
+        //     alert("The office is closed." );
+        // }
+
+        // alert( 1 || 0 ); // 1 (1 is truthy)
+
+        // alert( null || 1 ); // 1 (1 is the first truthy value)
+        // alert( null || 0 || 1 ); // 1 (the first truthy value)
+
+        // alert( undefined || null || 0 ); // 0 (all falsy, returns the last value)
+        
+        //PRACTICE JavaScript.info
+        //alert(null || 2 || undefined);
+        // Answer = 2
+        
+        // alert(alert(1) || 2 || alert(3));
+        // Answer = 2
+        //The second operand 2 is truthy, execution is halted, 2 is returned
+
+        //alert(1 && null && 2);
+        //Answer = null because it's the first falsy value
+
+        //alert(alert(1) && alert(2));
+        //alert returns undefined (it just shows a message, so there's no meaningful return)
+        //&& evaluates the left operand and immediately stops because undefined is a falsy value
+
+        let userName = prompt("Who's there?", '');
+
+        if (userName === 'Admin') {
+            
+            let password = prompt('Password?', '');
+
+            if (password === 'Admin') {
+                alert('Welcome!')
+            } else if (password === '' || password === null) {
+                alert('Canceled');
+            } else {
+                
+            }
         }
+
 
     </script>
 
