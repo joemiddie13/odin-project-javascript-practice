@@ -184,17 +184,33 @@
         //     }
         // }
 
+        // Odin Project: Fundamentals Part 3
+        // Assignment
+
+        // #1
         // function add7(number) {
         //     return number + 7;
         // }
         // let result = add7(5);
         // console.log(result);
 
-        function multiply(number1, number2) {
-            return number1 * number2;
+        // #2
+        // function multiply(number1, number2) {
+        //     return number1 * number2;
+        // }
+        // let result = multiply(5, 2);
+        // console.log(result);
+
+        // #3
+        function capitalize(string) {
+            if (string && typeof string === 'string') {
+                return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+            }
+            return '';
         }
-        let result = multiply(5, 2);
-        console.log(result);
+        console.log(capitalize('hello'));
+        console.log(capitalize('WORLD'));
+        console.log(capitalize('JaVaScRiPt'));
 
     </script>
 
